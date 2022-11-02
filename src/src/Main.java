@@ -49,7 +49,9 @@ public class Main {
             case "dividieren":
                 System.out.println("Durch welche Zahl soll " + Zahl + " dividiert werden?");
                 double ZahlDivi = benutzerEingabe.nextDouble();
-                System.out.println("Das Ergebnis ist: " + rn.division(Zahl, ZahlDivi));
+                if(ZahlDivi == 0.0){System.out.println("Sie dürfen nicht durch Null teilen!");}
+                else{
+                System.out.println("Das Ergebnis ist: " + rn.division(Zahl, ZahlDivi));}
                 break;
 
         }
