@@ -1,8 +1,11 @@
+import src.src.Rechnen;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        Rechnen rn = new Rechnen();
 
         Scanner benutzerEingabe = new Scanner(System.in);
         int Zahl;
@@ -18,9 +21,10 @@ public class Main {
         System.out.println("Danke, wir arbeiten also mit dieser Zahl: " + Zahl);
         System.out.println("Was sollen wir mit der Zahl machen?");
 
+        System.out.println(Zahl);
+        System.out.println(rn.addition(Zahl,Zahl));
+
 
 
     }
-
-
 }

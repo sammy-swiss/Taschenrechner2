@@ -2,10 +2,8 @@ package src.src;
 
 public class Rechnen {
 
-
-
-
-
+    public Rechnen() {
+    }
 
     public int faktor (int zahl1, int zahl2){
         return zahl1 * zahl2;
@@ -20,6 +18,6 @@ public class Rechnen {
         return z;
     }
     public int division(int zahl1, int zahl2) {
-        return zahl1/zahl2;
-
+        return zahl1 / zahl2;
+    }
 }
