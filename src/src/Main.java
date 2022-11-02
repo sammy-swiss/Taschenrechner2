@@ -1,3 +1,5 @@
+package src;
+
 import src.src.Rechnen;
 
 import java.util.Scanner;
