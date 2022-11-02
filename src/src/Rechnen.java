@@ -2,10 +2,7 @@ package src.src;
 
 public class Rechnen {
 
-
-    public int faktorisieren(int x, int y){
-        int zahlergebnis = x * y;
-        return zahlergebnis;
+    public int addition(int zahl1,int zahl2) {
+        return zahl1+zahl2;
     }
-
 }
