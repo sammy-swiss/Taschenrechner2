@@ -18,13 +18,33 @@ public class Main {
             }
             Zahl = benutzerEingabe.nextInt();
         } while (Zahl <= 0);
+
         System.out.println("Danke, wir arbeiten also mit dieser Zahl: " + Zahl);
         System.out.println("Was sollen wir mit der Zahl machen?");
 
-        System.out.println(Zahl);
-        System.out.println(rn.addition(Zahl,Zahl));
+        String rechenart;
+        rechenart = benutzerEingabe.next();
 
+        switch(rechenart){
+            case "addieren":
+                System.out.println("Welche Zahl soll zu " +Zahl +" addiert werden?");
+                int ZahlAdd = benutzerEingabe.nextInt();
+                System.out.println("Das Ergebnis ist: " + rn.addition(Zahl, ZahlAdd));
+                break;
 
+            case "subtrahieren":
+                System.out.println("Welche Zahl soll von " +Zahl +" subtrahiert werden?");
+                int ZahlSub = benutzerEingabe.nextInt();
+                System.out.println("Das Ergebnis ist: " + rn.dekrement(Zahl, ZahlSub));
+                break;
+
+            case "multiplizieren":
+                System.out.println("Mit welcher Zahl soll " + Zahl + " multipliziert werden?");
+                int ZahlMulti = benutzerEingabe.nextInt();
+                System.out.println("Das Ergebnis ist: " + rn.faktor(Zahl, ZahlMulti));
+                break;
+
+        }
 
     }
 }
