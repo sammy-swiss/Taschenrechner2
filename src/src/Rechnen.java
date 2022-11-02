@@ -19,5 +19,7 @@ public class Rechnen {
         int z = x - y;
         return z;
     }
+    public int division(int zahl1, int zahl2) {
+        return zahl1/zahl2;
 
 }
