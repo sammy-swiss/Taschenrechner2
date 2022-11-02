@@ -8,7 +8,7 @@ public class Main {
         Rechnen rn = new Rechnen();
 
         Scanner benutzerEingabe = new Scanner(System.in);
-        int Zahl;
+        double Zahl;
 
         do {
             System.out.println("Geben Sie eine Zahl ein");
@@ -28,20 +28,26 @@ public class Main {
         switch(rechenart){
             case "addieren":
                 System.out.println("Welche Zahl soll zu " +Zahl +" addiert werden?");
-                int ZahlAdd = benutzerEingabe.nextInt();
+                double ZahlAdd = benutzerEingabe.nextInt();
                 System.out.println("Das Ergebnis ist: " + rn.addition(Zahl, ZahlAdd));
                 break;
 
             case "subtrahieren":
                 System.out.println("Welche Zahl soll von " +Zahl +" subtrahiert werden?");
-                int ZahlSub = benutzerEingabe.nextInt();
+                double ZahlSub = benutzerEingabe.nextInt();
                 System.out.println("Das Ergebnis ist: " + rn.dekrement(Zahl, ZahlSub));
                 break;
 
             case "multiplizieren":
                 System.out.println("Mit welcher Zahl soll " + Zahl + " multipliziert werden?");
-                int ZahlMulti = benutzerEingabe.nextInt();
+                double ZahlMulti = benutzerEingabe.nextInt();
                 System.out.println("Das Ergebnis ist: " + rn.faktor(Zahl, ZahlMulti));
+                break;
+
+            case "dividieren":
+                System.out.println("Durch welche Zahl soll " + Zahl + " dividiert werden?");
+                double ZahlDivi = benutzerEingabe.nextInt();
+                System.out.println("Das Ergebnis ist: " + rn.division(Zahl, ZahlDivi));
                 break;
 
         }
