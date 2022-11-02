@@ -5,19 +5,19 @@ public class Rechnen {
     public Rechnen() {
     }
 
-    public int faktor (int zahl1, int zahl2){
+    public double faktor (double zahl1, double zahl2){
         return zahl1 * zahl2;
     }
 
-    public int addition(int zahl1,int zahl2) {
+    public double addition(double zahl1,double zahl2) {
         return zahl1+zahl2;
     }
 
-    public int dekrement(int x, int y){
-        int z = x - y;
+    public double dekrement(double x, double y){
+        double z = x - y;
         return z;
     }
-    public int division(int zahl1, int zahl2) {
+    public double division(double zahl1, double zahl2) {
         return zahl1 / zahl2;
     }
 }
